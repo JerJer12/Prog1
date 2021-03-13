@@ -65,7 +65,8 @@ int main()
 	int yszamlalo=0;
 
 
-	
+	while (true)
+	{
 
 		for(int i=0; i<10;i++)
 		{
@@ -78,9 +79,9 @@ int main()
 				xszamlalo=0;
 				yszamlalo++;
 			
-				if (yszamlalo==7)
+				if (yszamlalo==8)
 				{
-					pac.move(0,-700);
+					pac.move(0,-800);
 					yszamlalo=0;
 					xszamlalo=0;
 				}
@@ -95,7 +96,7 @@ int main()
 
 		}
 
-	
+	}
 
 	win.wait_for_button();
 }
