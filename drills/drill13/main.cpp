@@ -68,8 +68,8 @@ int main()
 	while (true)
 	{
 
-		for(int i=0; i<10;i++)
-		{
+		//for(int i=0; i<10;i++)
+		//{
 		
 		
 
@@ -94,9 +94,9 @@ int main()
 				
 			win.wait_for_button();
 
-		}
+		//}
 
 	}
 
-	win.wait_for_button();
+	//win.wait_for_button();
 }
