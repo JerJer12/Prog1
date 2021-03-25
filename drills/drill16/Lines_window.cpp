@@ -55,9 +55,9 @@ Lines_window::Lines_window(Point xy, int w, int h, const string& title)
              reference_to<Lines_window>(pw).solid_pressed();
          }));
 
-     style_menu.attach(new Button({0, 0}, 0, 0, "Dot", [](Address, Address pw)
+     style_menu.attach(new Button({0, 0}, 0, 0, "Dot", [](Address, Address pw)//callback függvény
      {
-         reference_to<Lines_window>(pw).dot_pressed();
+         reference_to<Lines_window>(pw).dot_pressed();  //ami történik, ha megnyomodik a gomb
      }));
      attach(style_menu);
      style_menu.hide();
@@ -89,7 +89,7 @@ void Lines_window::black_pressed() {
 
 void Lines_window::select_color_pressed() {     //meghívja a select_color_pressed függvéynt a LInes_window.h- ból és definiálja
     select_color.hide();        //elrejti a select_colort
-    color_menu.show();
+    color_menu.show();          //előhozza / megmutatja a color_menut
 }
 
 void Lines_window::color_pressed() {
