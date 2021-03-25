@@ -19,7 +19,7 @@ private:
     Out_box xy_out;
 
     Menu color_menu;
-    void change_color(Color c);
+    void change_color(Color c);     //a Color fügvényt használja
     void red_pressed();
     void blue_pressed();
     void black_pressed();
@@ -37,6 +37,8 @@ private:
     void   select_style_pressed();
     void   style_pressed();
 
+//Berásos inbox megoldás
+/*
     In_box style_inbox;
     Button style_ok;
     void   style_ok_pressed();
@@ -44,6 +46,7 @@ private:
     In_box color_inbox;
     Button color_ok;
     void   color_ok_pressed();
+    */
 
     void next();
     void quit();
